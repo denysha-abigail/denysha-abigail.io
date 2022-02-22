@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: rgb(20, 20, 90);
+    background-color: rgb(50, 50, 90);
 }
 
 .hero {
@@ -33,17 +33,16 @@ body {
 }
 
 .hero nav ul li img {
-    width: 5%;
+    width: 3%;
     margin-top: 0;
     display: relative;
-
 }
 
 .hero nav ul li img:hover {
     opacity: 50%;
 }
 
-.hero a {
+.hero nav ul li a {
     text-decoration: none;
 }
 
