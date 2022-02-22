@@ -8,16 +8,15 @@
 }
 
 body {
-    background-color: rgb(50, 50, 90);
+    background-color: rgb(50, 60, 90);
 }
 
 .hero {
-    background-image: url("../images/astronaut-space.jpeg");
+    background-image: linear-gradient(to bottom, transparent, rgb(50,60,90)), url("../images/astronaut-space.jpeg");
     height: 700px;
     background-size: cover;
     background-position: center;
     position: relative;
-    opacity: 85%;
 }
 
 .hero h1 {
@@ -48,4 +47,6 @@ body {
 
 .section-title {
     color: white;
+    letter-spacing: 1rem;
+    text-align: center;
 }
