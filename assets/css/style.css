@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Orbitron&family=Special+Elite&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background-color: rgb(20, 20, 90);
+}
+
+.hero {
+    background-image: url("../images/astronaut-space.jpeg");
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    opacity: 85%;
+}
+
+.hero h1 {
+    text-align: center;
+    color: white;
+    font-size: 27px;
+    font-weight: lighter;
+    line-height: 1.5;
+    letter-spacing: 1rem;
+    position: absolute;
+    top: 285px;
+    left: 200px;
+}
+
+.hero nav ul li img {
+    width: 5%;
+    margin-top: 0;
+    display: relative;
+
+}
+
+.hero nav ul li img:hover {
+    opacity: 50%;
+}
+
+.hero a {
+    text-decoration: none;
+}
+
+.section-title {
+    color: white;
+}
