@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Orbitron&family=Special+Elite&display=swap');
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -29,16 +38,25 @@ body {
     position: absolute;
     top: 285px;
     left: 200px;
+    right: 200px;
 }
 
 .hero nav ul li img {
     width: 3%;
-    margin-top: 0;
-    display: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: inline-block;
 }
 
 .hero nav ul li img:hover {
     opacity: 50%;
+}
+
+.hero h1, .hero nav ul li img {
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .hero nav ul li a {
