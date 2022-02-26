@@ -26,6 +26,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
 }
 
 .hero h1 {
@@ -41,15 +42,19 @@ body {
     right: 200px;
 }
 
-.hero nav ul li img {
-    width: 10%;
-    margin: 0;
-    padding: 0;
-    border: 0;
+.hero nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
 }
 
-.hero nav ul li img:hover {
-    opacity: 50%;
+.hero nav ul li img {
+    width: 7%;
+    margin: 0;
+    padding: 5px;
+    border: 0;
+    display: inline;
 }
 
 .hero h1, .hero nav ul li img {
@@ -58,9 +63,12 @@ body {
     animation-fill-mode: forwards;
 }
 
+.hero nav ul li img:hover {
+    opacity: 50%;
+}
+
 .hero nav ul li a {
     text-decoration: none;
-    position: fixed;
 }
 
 .section-title {
