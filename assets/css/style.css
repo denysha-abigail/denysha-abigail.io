@@ -9,6 +9,10 @@
      }
 }
 
+:root {
+    --header-color: white;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +35,7 @@ body {
 
 .hero h1 {
     text-align: center;
-    color: white;
+    color: var(--header-color);
     font-size: 27px;
     font-weight: lighter;
     line-height: 1.5;
@@ -71,8 +75,16 @@ body {
     text-decoration: none;
 }
 
-.section-title {
-    color: white;
+/* might need to fix */
+.section-title, footer {
+    color: var(--header-color);
     letter-spacing: 1rem;
     text-align: center;
+    font-size: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
