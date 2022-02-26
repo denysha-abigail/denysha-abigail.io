@@ -29,28 +29,26 @@ body {
     height: 700px;
     background-size: cover;
     background-position: center;
-    position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .hero h1 {
-    text-align: center;
     color: var(--header-color);
     font-size: 27px;
     font-weight: lighter;
     line-height: 1.5;
     letter-spacing: 1rem;
-    position: absolute;
-    top: 285px;
-    left: 200px;
-    right: 200px;
+    text-align: center;
 }
 
 .hero nav ul {
     list-style: none;
-    display: flex;
-    flex-direction: column;
     position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .hero nav ul li img {
@@ -58,7 +56,6 @@ body {
     margin: 0;
     padding: 5px;
     border: 0;
-    display: inline;
 }
 
 .hero h1, .hero nav ul li img {
@@ -67,24 +64,21 @@ body {
     animation-fill-mode: forwards;
 }
 
-.hero nav ul li img:hover {
+.hero nav ul li a:hover {
     opacity: 50%;
 }
 
-.hero nav ul li a {
-    text-decoration: none;
+.flex-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-/* might need to fix */
 .section-title, footer {
     color: var(--header-color);
     letter-spacing: 1rem;
     text-align: center;
     font-size: 15px;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 20px 0;
+    margin: 0 auto;
 }
