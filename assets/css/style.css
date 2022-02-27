@@ -44,27 +44,27 @@ body {
     text-align: center;
 }
 
-.hero nav ul {
+.nav-box {
     list-style: none;
     position: fixed;
     top: 0;
     left: 0;
 }
 
-.hero nav ul li img {
+.nav-bars img {   
     width: 7%;
     margin: 0;
     padding: 5px;
     border: 0;
 }
 
-.hero h1, .hero nav ul li img {
+.hero h1, .nav-bars img {
     animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
-.hero nav ul li a:hover {
+.nav-bars a:hover {
     opacity: 50%;
 }
 
