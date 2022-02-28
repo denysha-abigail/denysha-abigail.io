@@ -82,3 +82,10 @@ body {
     padding: 20px 0;
     margin: 0 auto;
 }
+
+.pro-title {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: ;
+    justify-content: ; */
+}
