@@ -21,11 +21,11 @@
 }
 
 body {
-    background-color: rgb(40,45,70);
+    background-color: rgb(15, 15, 25);
 }
 
 .hero {
-    background-image: linear-gradient(to bottom, transparent, rgb(40, 45, 70)), url("../images/astronaut-space-2.jpeg");
+    background-image: linear-gradient(to bottom, transparent, rgb(15, 15, 25)), url("../images/astronaut-space-2.jpeg");
     height: 700px;
     background-size: cover;
     background-position: center;
