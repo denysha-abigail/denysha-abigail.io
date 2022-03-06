@@ -87,14 +87,6 @@ body {
 }
 /* hero section ends */
 
-.flex-row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin: 10px;
-}
-
 .section-title {
     color: var(--header-color);
     letter-spacing: 1rem;
@@ -345,7 +337,7 @@ footer h2 {
     }
 
     .section-title {
-        width: 75%;
+        width: 100%;
         font-size: 20px;
     }
 
@@ -438,4 +430,3 @@ footer h2 {
         font-size: 8px;
     }
 }
-
