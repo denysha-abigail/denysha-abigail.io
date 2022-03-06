@@ -24,6 +24,8 @@ body {
     background-color: rgb(15, 15, 25);
 }
 
+/* hero section starts */
+
 .hero {
     background-image: linear-gradient(to bottom, transparent, rgb(15, 15, 25)), url("../images/astronaut-space-2.jpeg");
     height: 700px;
@@ -68,6 +70,10 @@ body {
     opacity: 50%;
 }
 
+/* hero section ends */
+
+
+
 .flex-row {
     display: flex;
     justify-content: center;
@@ -83,9 +89,67 @@ body {
     margin: 0 auto;
 }
 
+/* project section starts */
+
 .pro-title {
     display: flex;
     flex-wrap: wrap;
     /* align-items: ;
     justify-content: ; */
 }
+
+/* project section ends */
+
+
+
+/* about section starts */
+
+.skill-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.html, .css {
+    width: 10%;
+    filter: brightness(.7) invert(0.4);
+  }  
+
+.java {
+    width: 12.5%;
+    filter: brightness(.7) invert(0.4);
+}
+
+.html:hover, .css:hover, .java:hover {
+    filter: brightness(1) invert(0);
+}
+
+/* about section ends */
+
+
+
+/* contact section starts */
+
+/* contact section ends */
+
+
+@media screen and (max-width: 980px){
+    /* element {
+        property: value;
+    } */
+}
+
+@media screen and (max-width: 768px){
+    /* element {
+        property: value;
+    } */
+}
+
+@media screen and (max-width: 575px){
+    /* element {
+        property: value;
+    } */
+}
+
