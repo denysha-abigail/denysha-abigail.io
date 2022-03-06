@@ -23,6 +23,7 @@
 
 :root {
     --header-color: white;
+    --bg-color: rgb(15, 15, 25)
 }
 
 * {
@@ -30,16 +31,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Orbitron', sans-serif;
+    overflow-x: hidden;
 }
 
 body {
-    background-color: rgb(15, 15, 25);
+    background-color: var(--bg-color);
 }
 
 /* hero section starts */
-
 .hero {
-    background-image: linear-gradient(to bottom, transparent, rgb(15, 15, 25)), url("../images/astronaut-space-2.jpeg");
+    background-image: linear-gradient(to bottom, transparent, var(--bg-color)), url("../images/astronaut-space-2.jpeg");
     height: 800px;
     background-size: cover;
     background-position: center;
@@ -84,10 +85,7 @@ body {
 .nav-bars a:hover {
     opacity: 50%;
 }
-
 /* hero section ends */
-
-
 
 .flex-row {
     display: flex;
@@ -103,11 +101,11 @@ body {
     text-align: center;
     font-size: 30px;
     padding: 15px;
-    margin: 20px;
+    margin: 0 auto 35px auto;
+    width: 50%;
 }
 
 /* project section starts */
-
 .projects {
     color: var(--header-color);
     display: flex;
@@ -181,21 +179,17 @@ body {
     background-image: url("/assets/images/password-demo.png");
 }
 
-
-
 .pro-text {
     font-size: 12px;
     line-height: 2.0;
     letter-spacing: .25rem;
     padding: 15px;
 }
-
 /* project section ends */
 
 
 
 /* about section starts */
-
 .about-info {
     display: flex;
     flex-wrap: wrap;
@@ -215,8 +209,6 @@ body {
     background-image: url("/assets/images/about-img.jpg");
     background-repeat: no-repeat;
     background-size: 400px 400px;
-    animation: float 6s ease-in-out infinite;
-    -webkit-animation: float 6s ease-in-out infinite;
 }
 
 .about-text {
@@ -224,6 +216,7 @@ body {
     font-size: 15px;
     flex: 1;
     padding: 20px;
+    margin: 15px;
     line-height: 2;
     text-align: center;
 }
@@ -247,11 +240,9 @@ body {
     filter: brightness(1) invert(0);
     -webkit-filter: brightness(1) invert(0);
 }
-
 /* about section ends */
 
 /* skill-box section starts */
-
 .skill-box {
     display: flex;
     flex-wrap: wrap;
@@ -259,19 +250,64 @@ body {
     justify-content: space-around;
     padding: 20px;
 }
-
 /* skill-box section ends */
 
 
 /* contact section starts */
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
+.contact-form h3 {
+    color: var(--header-color);
+    width: 100%;
+    text-align: center;
+}
 
+.contact-form label {
+    color: var(--header-color);
+    letter-spacing: .5rem;
+}
 
+.contact-form input, .contact-form textarea {
+    border: 1px solid var(--header-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 1.5vw;
+    color: var(--header-color);
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: var(--header-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.contact-form button:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
 /* contact section ends */
 
 
 /* footer section starts */
-
 footer {
     width: 100%;
     padding: 10px;
@@ -279,21 +315,22 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 5px 5px;
 }
 
 footer h2 {
     color: var(--header-color);
     font-size: 15px;
-    margin: 0;
     letter-spacing: .25rem;
 }
 
 .connect-box img {
     width: 75px;
-    animation: float 6s ease-in-out infinite;
-    -webkit-animation: float 6s ease-in-out infinite;
 }
 
+.github:hover, .linkedin:hover {
+    opacity: 50%;
+}
 /* footer section ends */
 
 
