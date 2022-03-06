@@ -139,7 +139,7 @@ body {
     margin: 20px;
     border: 1px solid var(--header-color);
     border-radius: 50%;
-    background-image: url("/assets/images/run-buddy-demo.png");
+    background-image: url("../images/run-buddy-demo.png");
     background-repeat: no-repeat;
     background-size: 500px 500px;
 }
@@ -164,11 +164,11 @@ body {
 }
 
 .pro-2 {
-    background-image: url("/assets/images/horiseon-demo.png");
+    background-image: url("../images/horiseon-demo.png");
 }
 
 .pro-3 {
-    background-image: url("/assets/images/password-demo.png");
+    background-image: url("../images/password-demo.png");
 }
 
 .pro-text {
@@ -198,7 +198,7 @@ body {
     margin: 0 auto;
     border: 1px solid var(--header-color);
     border-radius: 50%;
-    background-image: url("/assets/images/about-img.jpg");
+    background-image: url("../images/about-img.jpg");
     background-repeat: no-repeat;
     background-size: 400px 400px;
 }
