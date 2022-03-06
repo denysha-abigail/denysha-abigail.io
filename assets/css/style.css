@@ -9,6 +9,18 @@
      }
 }
 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
 :root {
     --header-color: white;
 }
@@ -28,7 +40,7 @@ body {
 
 .hero {
     background-image: linear-gradient(to bottom, transparent, rgb(15, 15, 25)), url("../images/astronaut-space-2.jpeg");
-    height: 700px;
+    height: 800px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -64,6 +76,9 @@ body {
     animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    -webkit-animation: fadeInAnimation ease 4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
 }
 
 .nav-bars a:hover {
@@ -78,24 +93,101 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px;
 }
 
-.section-title, footer {
+.section-title {
     color: var(--header-color);
     letter-spacing: 1rem;
     text-align: center;
-    font-size: 15px;
-    padding: 20px 0;
-    margin: 0 auto;
+    font-size: 30px;
+    padding: 15px;
+    margin: 20px;
 }
 
 /* project section starts */
 
-.pro-title {
+.projects {
+    color: var(--header-color);
     display: flex;
     flex-wrap: wrap;
-    /* align-items: ;
-    justify-content: ; */
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.projects h3 {
+    padding: 15px;
+    width: 100%;
+}
+
+.pro-info-lg, .pro-info-sm {
+    font-size: 20px;
+    letter-spacing: .5rem;
+}
+
+.pro-1, .pro-2, .pro-3 {
+    animation: float 6s ease-in-out infinite;
+    -webkit-animation: float 6s ease-in-out infinite;
+}
+
+.pro-1:hover, .pro-2:hover, .pro-3:hover{
+    opacity: 50%;
+}
+
+.pro-info-lg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pro-info-lg-img {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    border: 1px solid var(--header-color);
+    border-radius: 50%;
+    background-image: url("/assets/images/run-buddy-demo.png");
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+}
+
+.pro-info-sm {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+}
+
+.pro-info-sm-img {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border: 1px solid var(--header-color);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+}
+
+.pro-2 {
+    background-image: url("/assets/images/horiseon-demo.png");
+}
+
+.pro-3 {
+    background-image: url("/assets/images/password-demo.png");
+}
+
+
+
+.pro-text {
+    font-size: 12px;
+    line-height: 2.0;
+    letter-spacing: .25rem;
+    padding: 15px;
 }
 
 /* project section ends */
@@ -103,6 +195,62 @@ body {
 
 
 /* about section starts */
+
+.about-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: .25rem;
+}
+
+.about-img {
+    flex: 1;
+    width: 400px;
+    height: 400px;
+    padding: 15px;
+    margin: 0 auto;
+    border: 1px solid var(--header-color);
+    border-radius: 50%;
+    background-image: url("/assets/images/about-img.jpg");
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    animation: float 6s ease-in-out infinite;
+    -webkit-animation: float 6s ease-in-out infinite;
+}
+
+.about-text {
+    color: var(--header-color);
+    font-size: 15px;
+    flex: 1;
+    padding: 20px;
+    line-height: 2;
+    text-align: center;
+}
+
+.html, .css {
+    width: 100px;
+  }  
+
+.java {
+    width: 130px;
+}
+
+.html, .css, .java {
+    filter: brightness(.7) invert(0.4);
+	animation: float 6s ease-in-out infinite;
+    -webkit-filter: brightness(.7) invert(0.4);
+    -webkit-animation: float 6s ease-in-out infinite;
+}
+
+.html:hover, .css:hover, .java:hover {
+    filter: brightness(1) invert(0);
+    -webkit-filter: brightness(1) invert(0);
+}
+
+/* about section ends */
+
+/* skill-box section starts */
 
 .skill-box {
     display: flex;
@@ -112,27 +260,41 @@ body {
     padding: 20px;
 }
 
-.html, .css {
-    width: 10%;
-    filter: brightness(.7) invert(0.4);
-  }  
-
-.java {
-    width: 12.5%;
-    filter: brightness(.7) invert(0.4);
-}
-
-.html:hover, .css:hover, .java:hover {
-    filter: brightness(1) invert(0);
-}
-
-/* about section ends */
-
+/* skill-box section ends */
 
 
 /* contact section starts */
 
+
+
 /* contact section ends */
+
+
+/* footer section starts */
+
+footer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2 {
+    color: var(--header-color);
+    font-size: 15px;
+    margin: 0;
+    letter-spacing: .25rem;
+}
+
+.connect-box img {
+    width: 75px;
+    animation: float 6s ease-in-out infinite;
+    -webkit-animation: float 6s ease-in-out infinite;
+}
+
+/* footer section ends */
 
 
 @media screen and (max-width: 980px){
