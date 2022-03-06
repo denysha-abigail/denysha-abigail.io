@@ -276,7 +276,7 @@ body {
     border: 1px solid var(--header-color);
     display: block;
     padding: 7px 15px;
-    font-size: 1.5vw;
+    font-size: 15px;
     color: var(--header-color);
     margin-bottom: 15px;
     margin-top: 5px;
@@ -335,20 +335,107 @@ footer h2 {
 
 
 @media screen and (max-width: 980px){
-    /* element {
-        property: value;
-    } */
+    .hero h1 {
+        font-size: 25px;
+        letter-spacing: .5rem;
+    }
+
+    .projects h3 {
+        font-size: 15px;
+    }
+
+    .section-title {
+        width: 75%;
+        font-size: 20px;
+    }
+
+    .pro-info-lg-img {
+        height: 400px;
+        width: 400px;
+        background-size: 400px 400px;
+    }
+
+    .pro-info-sm-img {
+        height: 200px;
+        width: 200px;
+        background-size: 200px 200px;
+    }
+
+    .about-img {
+        height: 300px;
+        width: 300px;
+        background-size: 300px 300px;
+    }
+
+    .about-text, footer h2 {
+        font-size: 12px;
+    }
+
+    .html, .css {
+        width: 80px;
+      }  
+    
+    .java {
+        width: 110px;
+    }
+
+    .connect-box img {
+        width: 55px;
+    }
+
 }
 
 @media screen and (max-width: 768px){
-    /* element {
-        property: value;
-    } */
+    .hero h1 {
+        font-size: 17px;
+    }
+
+    .pro-info-sm {
+        flex: 0 100%;
+    }
+
+    footer h2 {
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 575px){
-    /* element {
-        property: value;
-    } */
+    .hero h1 {
+        font-size: 15px;
+    }
+
+    .pro-info-lg-img {
+        height: 300px;
+        width: 300px;
+        background-size: 300px 300px;
+    }
+
+    .pro-info-sm-img {
+        height: 100px;
+        width: 100px;
+        background-size: 100px 100px;
+    }
+
+    .about-img {
+        height: 200px;
+        width: 200px;
+        background-size: 200px 200px;
+    }
+
+    .html, .css {
+        width: 60px;
+      }  
+    
+    .java {
+        width: 80px;
+    }
+
+    .connect-box img {
+        width: 55px;
+    }
+
+    footer h2 {
+        font-size: 8px;
+    }
 }
 
