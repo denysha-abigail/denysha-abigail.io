@@ -73,7 +73,7 @@ body {
     border: 0;
 }
 
-.hero h1, .nav-bars img {
+.hero h1, .nav-bars img, .hero {
     animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
