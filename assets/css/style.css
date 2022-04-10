@@ -175,6 +175,14 @@ body {
     background-image: url("../images/password-demo.png");
 }
 
+.pro-4 {
+    background-image: url("../images/coding-assessment-demo.png");
+}
+
+.pro-5 {
+    background-image: url("../images/weather-dashboard.png");
+}
+
 .pro-text {
     font-size: 12px;
     line-height: 2.0;
@@ -323,6 +331,10 @@ footer h2 {
 
 .connect-box img {
     width: 75px;
+}
+
+.github, .linkedin {
+    margin: 5px;
 }
 
 .github:hover, .linkedin:hover {
