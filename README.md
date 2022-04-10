@@ -12,7 +12,7 @@ Responsive portfolio built from scratch with HTML and CSS to showcase the abilit
 https://denysha-abigail.github.io/denysha-abigail.io/
 
 ## Preview:
-![screenshot](/assets/images/preview.png)
+![screenshot]
 
 ## Contributors:
 *Denysha Guerrios-Armaiz, 03/2022*
