@@ -97,13 +97,17 @@ body {
     width: 50%;
 }
 
-/* project section starts */
+/* /* project section starts * */
 .projects {
     color: var(--header-color);
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
+}
+
+.projects a {
+    cursor: pointer;
 }
 
 .projects h3 {
@@ -139,7 +143,7 @@ body {
     margin: 20px;
     border: 1px solid var(--header-color);
     border-radius: 50%;
-    background-image: url("../images/run-buddy-demo.png");
+    background-image: url("../images/roses_are_red.png");
     background-repeat: no-repeat;
     background-size: 500px 500px;
 }
@@ -176,6 +180,7 @@ body {
     line-height: 2.0;
     letter-spacing: .25rem;
     padding: 15px;
+    margin: 10px;
 }
 /* project section ends */
 
@@ -213,7 +218,7 @@ body {
     text-align: center;
 }
 
-.html, .css {
+.icon {
     width: 100px;
   }  
 
@@ -221,14 +226,14 @@ body {
     width: 130px;
 }
 
-.html, .css, .java {
+.icon, .java {
     filter: brightness(.7) invert(0.4);
 	animation: float 6s ease-in-out infinite;
     -webkit-filter: brightness(.7) invert(0.4);
     -webkit-animation: float 6s ease-in-out infinite;
 }
 
-.html:hover, .css:hover, .java:hover {
+.icon:hover, .java:hover {
     filter: brightness(1) invert(0);
     -webkit-filter: brightness(1) invert(0);
 }
