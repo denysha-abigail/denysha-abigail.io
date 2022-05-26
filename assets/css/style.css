@@ -120,12 +120,12 @@ body {
     letter-spacing: .5rem;
 }
 
-.pro-1, .pro-2, .pro-3 {
+.p-1, .p-2, .p-3, .p-4, .p-5, .p-6 {
     animation: float 6s ease-in-out infinite;
     -webkit-animation: float 6s ease-in-out infinite;
 }
 
-.pro-1:hover, .pro-2:hover, .pro-3:hover{
+.p-1:hover, .p-2:hover, .p-3:hover, .p-4:hover, .p-5:hover, .p-6:hover {
     opacity: 50%;
 }
 
@@ -167,19 +167,27 @@ body {
     background-size: 300px 300px;
 }
 
-.pro-2 {
-    background-image: url("../images/horiseon-demo.png");
+.p-1 {
+    background-image: url("../images/roses_are_red.png");
 }
 
-.pro-3 {
+.p-2 {
+    background-image: url("../images/sample-team-preview.png");
+}
+
+.p-3 {
+    background-image: url("../images/nodebase_preview_screenshot.png");
+}
+
+.p-4 {
     background-image: url("../images/password-demo.png");
 }
 
-.pro-4 {
+.p-5 {
     background-image: url("../images/coding-assessment-demo.png");
 }
 
-.pro-5 {
+.p-6 {
     background-image: url("../images/weather-dashboard.png");
 }
 
@@ -230,18 +238,18 @@ body {
     width: 100px;
   }  
 
-.java {
+.resize {
     width: 130px;
 }
 
-.icon, .java {
+.icon, .resize {
     filter: brightness(.7) invert(0.4);
 	animation: float 6s ease-in-out infinite;
     -webkit-filter: brightness(.7) invert(0.4);
     -webkit-animation: float 6s ease-in-out infinite;
 }
 
-.icon:hover, .java:hover {
+.icon:hover, .resize:hover {
     filter: brightness(1) invert(0);
     -webkit-filter: brightness(1) invert(0);
 }
